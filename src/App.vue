@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <main class="container">
+  <HomeList/>
+ </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeList from './components/HomeList'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HomeList
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a{
+  text-decoration:none;
+}
+
+li{
+  list-style: none;
+}
+
+.container{
+
 }
 </style>
