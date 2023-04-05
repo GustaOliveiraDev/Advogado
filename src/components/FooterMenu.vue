@@ -21,12 +21,10 @@ export default {
 </script>
 
 <style>
-.caontainer-rodape {
-    background: #1c1c1c;
-    color: white;
-}
 
 .rodape {
+    background:#495867 ;
+    color: white;
     height: 100px;
     display: flex;
     justify-content: center;

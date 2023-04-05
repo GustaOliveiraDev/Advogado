@@ -1,12 +1,14 @@
 <template>
   <div class="container-diretoria">
+    <hr class="hr1">
     <div class="title">
       DIRETORIAS
     </div>
 
     <div class="diretorias">
 
-      <div class="secretaria">
+   
+        <div class="cads-diretoria">
         <picture>
           <img class="banner-diretorias" src="../../../public/direotias/secretaria.jpg" alt="secretaria geral">
         </picture>
@@ -20,7 +22,7 @@
         </div>
       </div>
 
-      <div class="cientifica">
+      <div class="cads-diretoria">
         <picture>
           <img class="banner-diretorias" src="../../../public/direotias/cientifica.jpg" alt="secretaria geral">
         </picture>
@@ -34,7 +36,8 @@
         </div>
       </div>
 
-      <div class="comunicacao">
+
+  <div class="cads-diretoria">
         <picture>
           <img class="banner-diretorias" src="../../../public/direotias/comunicacao.jpg" alt="secretaria geral">
         </picture>
@@ -48,7 +51,7 @@
         </div>
       </div>
 
-      <div class="financeira">
+      <div class="cads-diretoria">
         <picture>
           <img class="banner-diretorias" src="../../../public/direotias/finaceira.jpg" alt="secretaria geral">
         </picture>
@@ -61,44 +64,53 @@
           </div>
         </div>
       </div>
+
+
     </div>
+    <hr class="hr1">
   </div>
 </template>
 
 <script>
+
 export default {
 
 }
 </script>
 
 <style>
-.container-diretoria{
-  /* margin-bottom: 100px; */
 
-  background: black ;
+.hr1 {
+  border: 0;
+  border-top: 1px solid #CCC;
 }
+
+
 .title {
   display: flex;
   font-family: "Times New Roman";
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 500;
+  font-weight: bold;
+  margin: 50px;
   justify-content: center;
   color: #7f6000;
-
 }
 
 .diretorias {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #f1f1f3;
+}
 
-  background: black;
+.cads-diretoria{
+  margin-bottom: 50px;
 }
 
 .banner-diretorias {
   height: 200px;
   width: 250px;
-
   padding: 20px;
 }
 
@@ -113,7 +125,7 @@ export default {
 
 .nome-diretorias {
 
-  color: white;
+  color: black;
   margin-bottom: 15px;
 }
 
@@ -123,7 +135,7 @@ export default {
   margin-bottom: 15px;
   white-space: nowrap;
   background: #7f6000;
-  padding: 5px;
+  padding: 15px;
   border-radius: 10px;
   width: 200px;
   color: white;
@@ -136,7 +148,10 @@ export default {
   align-items: center;
   flex-direction: column;
 
-  background: black;
+  background: #f1f1f3;
+}
+.cads-diretoria{
+  margin-right:0px;
 }
 }
 

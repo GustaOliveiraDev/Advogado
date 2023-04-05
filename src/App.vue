@@ -1,17 +1,11 @@
 <template>
   <main class="container">
 
-    <HeaderMenu/>
-
-    <BannerHome/>
-
-    <DiretoriasHome/>
-
-    <DuvidasFreguentes/>
-
+    <HeaderMenu />
+    <BannerHome />
     <ContatoHome />
-
-    <FooterMenu/>
+    <DiretoriasHome />
+    <FooterMenu />
 
   </main>
 </template>
@@ -19,19 +13,21 @@
 <script>
 import HeaderMenu from './components/HeaderMenu'
 import BannerHome from './components/BannerHome'
+import ContatoHome from './components/ContatoHome.vue'
 import DiretoriasHome from './components/Diretorias/DiretoriasHome'
-import ContatoHome from './components/ContatoHome'
-import DuvidasFreguentes from './components/DuvidasFreguentes'
+
+
 import FooterMenu from './components/FooterMenu'
+
 export default {
   name: 'App',
   components: {
+
     HeaderMenu,
     BannerHome,
+    ContatoHome,
     DiretoriasHome,
     FooterMenu,
-    ContatoHome,
-    DuvidasFreguentes,
   }
 }
 </script>
@@ -44,15 +40,6 @@ export default {
 }
 
 body {
-  background: black;
-}
-
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
+  background: #f1f1f3;
 }
 </style>

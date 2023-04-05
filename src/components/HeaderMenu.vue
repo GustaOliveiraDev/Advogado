@@ -1,26 +1,37 @@
 
 <template>
   <nav class="navbar">
+
     <div class="navbar-container ">
-      <input type="checkbox" name="" id="">
-      <div class="hamburger-lines">
-        <span class="line line1"></span>
-        <span class="line line2"></span>
-        <span class="line line3"></span>
-      </div>
-      <div class="menu-items">
-        <div class="items"><a href="#home">Home</a></div>
-        <div class="items"><a href="#diretorias">Diretorias</a></div>
-        <div class="items"><a href="#aplicacao">Aplicação</a></div>
-        <div class="items"><a href="#contato">Contato</a></div>
-      </div>
+      <input type="checkbox" name="" id="" /> 
+
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+
+      
+        <div class="menu-items">
+          <div class="items"><a href="#home">Home</a></div>
+          <div class="items"><a href="#diretorias">Diretorias</a></div>
+          <div class="items"><a href="#aplicacao">Aplicação</a></div>
+          <div class="items"><a href="#contato">Contato</a></div>
+        </div>
+      
+      
+      <Magnify class="magnify" />
 
     </div>
+
   </nav>
 </template>
 <script>
+import Magnify from 'vue-material-design-icons/Magnify.vue';
 export default {
-
+  components: {
+    Magnify
+  }
 }
 </script>
 
@@ -30,7 +41,12 @@ export default {
   padding: 0;
 }
 
-
+.magnify {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  color: white;
+}
 
 .navbar input[type="checkbox"],
 
@@ -39,32 +55,32 @@ export default {
 }
 
 .navbar {
-  position: sticky;
-  top: 0;
-  background: #1c1c1c;
+ 
+  background:#495867 ;
   width: 100%;
-  height: 50px;
+   height: 100px;
   color: white;
 }
 
 
 .navbar-container {
-  height: 50px;
+  height: 100px;
   display: flex;
+  margin-right: 25px;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 .menu-items {
   display: flex;
   font-weight: 500;
 }
-.items a{
+
+.items a {
   margin-right: 15px;
+  text-decoration: none;
   color: white;
 }
-
-
 
 @media (max-width: 768px) {
 
@@ -78,6 +94,7 @@ export default {
     position: relative;
     height: 50px;
   }
+
 
   .navbar-container input[type="checkbox"] {
     position: absolute;
@@ -125,6 +142,8 @@ export default {
     transition: transform 0.4s ease-in-out;
   }
 
+
+
   .navbar .menu-items {
     padding-top: 100px;
     background: #1c1c1c;
@@ -139,18 +158,15 @@ export default {
 
   }
 
-  .items{
-  margin-bottom: 15px;
+  .items {
+    margin-bottom: 15px;
+  }
 
-}
-
-  .navbar .menu-items  {
+  .navbar .menu-items {
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
     font-weight: 500;
   }
-
-
 
   .navbar-container input[type="checkbox"]:checked~.menu-items {
     transform: translateX(0);
