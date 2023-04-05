@@ -1,38 +1,58 @@
 <template>
- <main class="container">
-  <HomeList/>
- </main>
+  <main class="container">
+
+    <HeaderMenu/>
+
+    <BannerHome/>
+
+    <DiretoriasHome/>
+
+    <DuvidasFreguentes/>
+
+    <ContatoHome />
+
+    <FooterMenu/>
+
+  </main>
 </template>
 
 <script>
-import HomeList from './components/HomeList'
-
+import HeaderMenu from './components/HeaderMenu'
+import BannerHome from './components/BannerHome'
+import DiretoriasHome from './components/Diretorias/DiretoriasHome'
+import ContatoHome from './components/ContatoHome'
+import DuvidasFreguentes from './components/DuvidasFreguentes'
+import FooterMenu from './components/FooterMenu'
 export default {
   name: 'App',
   components: {
-    HomeList
+    HeaderMenu,
+    BannerHome,
+    DiretoriasHome,
+    FooterMenu,
+    ContatoHome,
+    DuvidasFreguentes,
   }
 }
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
 
-a{
-  text-decoration:none;
+body {
+  background: black;
 }
 
-li{
+
+a {
+  text-decoration: none;
+}
+
+li {
   list-style: none;
-}
-
-.container{
-
 }
 </style>
