@@ -1,11 +1,26 @@
 <template>
   <main class="container">
 
-    <HeaderMenu />
-    <BannerHome />
-    <ContatoHome />
-    <DiretoriasHome />
-    <FooterMenu />
+    <div>
+      <HeaderMenu />
+    </div>
+    
+    <div>
+      <BannerHome />
+    </div>
+
+    <div>
+      <ContatoHome />
+
+    </div>
+
+    <div>
+      <DiretoriasHome />
+    </div>
+
+    <div>
+      <FooterMenu />
+    </div>
 
   </main>
 </template>
@@ -41,5 +56,7 @@ export default {
 
 body {
   background: #f1f1f3;
+  width: 100vh;
+  height: 100vh;
 }
 </style>

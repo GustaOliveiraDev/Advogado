@@ -55,16 +55,17 @@ export default {
 }
 
 .navbar {
- 
+ margin-bottom: 50px;
   background:#495867 ;
-  width: 100%;
-   height: 100px;
+  width: 100vw;
+  height: 100px;
   color: white;
 }
 
 
 .navbar-container {
   height: 100px;
+  width: 100%;
   display: flex;
   margin-right: 25px;
   align-items: center;

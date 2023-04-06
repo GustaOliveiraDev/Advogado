@@ -1,20 +1,22 @@
 <template>
   <div class="container-diretoria">
-    <hr class="hr1">
+   
     <div class="title">
-      DIRETORIAS
+      <h1> Meu Blog </h1>
+      Fique por dentro de todos os acontencimentos jurídicos no Brasil
+
     </div>
 
     <div class="diretorias">
 
-   
-        <div class="cads-diretoria">
-        <picture>
-          <img class="banner-diretorias" src="../../../public/direotias/secretaria.jpg" alt="secretaria geral">
+      <div class="cads-diretoria">
+        <picture class="pai-banner">
+          <img class="banner-diretorias" src="../../../public/direotias/cientifica.jpg" alt="cienciaImagem">
         </picture>
         <div class="nome-botao">
-          <div class="nome-diretorias">
-            SECRETARIA-GERAL
+          <div class="nome-blog">
+            <h2>Como serão as sanções da LGPD</h2>
+            O que advogados e escritórios podem esperar do novo Provimento da OAB que deve ser analisado pelo CF
           </div>
           <div class="butao-diretorias">
             Nossa Jornada
@@ -23,12 +25,13 @@
       </div>
 
       <div class="cads-diretoria">
-        <picture>
-          <img class="banner-diretorias" src="../../../public/direotias/cientifica.jpg" alt="secretaria geral">
+        <picture class="pai-banner">
+          <img class="banner-diretorias" src="../../../public/direotias/cientifica.jpg" alt="cienciaImagem">
         </picture>
         <div class="nome-botao">
-          <div class="nome-diretorias">
-            CIENTÍFICA
+          <div class="nome-blog">
+            <h2>Como serão as sanções da LGPD</h2>
+            O que advogados e escritórios podem esperar do novo Provimento da OAB que deve ser analisado pelo CF
           </div>
           <div class="butao-diretorias">
             Nossa Jornada
@@ -37,13 +40,14 @@
       </div>
 
 
-  <div class="cads-diretoria">
-        <picture>
-          <img class="banner-diretorias" src="../../../public/direotias/comunicacao.jpg" alt="secretaria geral">
+      <div class="cads-diretoria">
+        <picture class="pai-banner">
+          <img class="banner-diretorias" src="../../../public/direotias/cientifica.jpg" alt="cienciaImagem">
         </picture>
         <div class="nome-botao">
-          <div class="nome-diretorias">
-            COMUNICAÇÃO
+          <div class="nome-blog">
+            <h2>Como serão as sanções da LGPD</h2>
+            O que advogados e escritórios podem esperar do novo Provimento da OAB que deve ser analisado pelo CF
           </div>
           <div class="butao-diretorias">
             Nossa Jornada
@@ -52,22 +56,23 @@
       </div>
 
       <div class="cads-diretoria">
-        <picture>
-          <img class="banner-diretorias" src="../../../public/direotias/finaceira.jpg" alt="secretaria geral">
+        <picture class="pai-banner">
+          <img class="banner-diretorias" src="../../../public/direotias/cientifica.jpg" alt="cienciaImagem">
         </picture>
         <div class="nome-botao">
-          <div class="nome-diretorias">
-            FINANCEIRA
+          <div class="nome-blog">
+         <h2>Como serão as sanções da LGPD</h2>
+         O que advogados e escritórios podem esperar do novo Provimento da OAB que deve ser analisado pelo CF
           </div>
           <div class="butao-diretorias">
-            Nossa Jornada
+            Leia mais
           </div>
         </div>
       </div>
 
 
     </div>
-    <hr class="hr1">
+   
   </div>
 </template>
 
@@ -80,79 +85,83 @@ export default {
 
 <style>
 
-.hr1 {
-  border: 0;
-  border-top: 1px solid #CCC;
+.container-diretoria{
+  width: 100vw;
 }
-
-
-.title {
-  display: flex;
-  font-family: "Times New Roman";
-  font-size: 30px;
-  font-weight: 500;
-  font-weight: bold;
-  margin: 50px;
-  justify-content: center;
-  color: #7f6000;
-}
-
 .diretorias {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f1f1f3;
 }
 
-.cads-diretoria{
-  margin-bottom: 50px;
+.title {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 50px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #1b2a41;
+}
+
+.pai-banner{
+  padding: 25px ;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+ 
 }
 
 .banner-diretorias {
-  height: 200px;
-  width: 250px;
-  padding: 20px;
+  display: flex;
+  text-align: center;
+  border-radius:15px;
+  height:195px;
+  width: 340px;
+}
+.cads-diretoria {
+  background: white;
+  margin: 10px;
+  width:360px;
+  height:450px;
+  border-radius:15px;
 }
 
+
+.nome-blog {
+  padding: 15px;
+  text-align: center;
+  color: #1b2a41;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
 .nome-botao {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
   flex-direction: column;
- 
-
-}
-
-.nome-diretorias {
-
-  color: black;
-  margin-bottom: 15px;
 }
 
 .butao-diretorias {
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
   white-space: nowrap;
-  background: #7f6000;
-  padding: 15px;
+  background: #cc2936;
+  padding: 6px;
   border-radius: 10px;
-  width: 200px;
+  width: 100px;
   color: white;
 }
+
 @media (max-width: 768px) {
 
   .diretorias {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  background: #f1f1f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
-.cads-diretoria{
-  margin-right:0px;
-}
-}
-
 </style>

@@ -1,45 +1,48 @@
 <template>
-    <div>
-        <div class="container-contato">
-            
-            <div>
-                Especializada em Direito
-                empresarial
-            </div>
-            <div>
-                Expert na prevenção de riscos às empresas e na
-                proposição de mecanismos
+    <div class="container-contato">
+        <div class="pai-contato">
+            <div class="text">
+
+                <h2>Especializada em Direito<br></h2>
+
+                <h1>empresarial<br></h1>
+
+
+                Expert na prevenção de riscos às empresas e na proposição de mecanismos
                 para fortalecimento do negócio. Agende seu horário
             </div>
 
-            <div class="contato">
+            <div class="container-maps">
+                <div class="contato">
+
+
+                    <div class="meio-contato">
+                        Telefone<br>
+                        <h3>(33) 3333-3333</h3>
+                    </div>
+
+                    <div class="meio-contato">
+                        Whatsapp<br>
+                        <h3> (33) 3333-3333</h3>
+                    </div>
+
+                    <div class="meio-contato">
+                        Instagram<br>
+                        <h3> @seuinstagram</h3>
+                    </div>
+
+                </div>
+
 
                 <div>
-                    <div>
-                        Telefone<br>
-                        (33) 3333-3333
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7685.3006039353395!2d-56.00149657269705!3d-15.610321823552109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939da531617a0115%3A0x1818f4f1a6f0b01a!2sOsmar%20Cabral%2C%20Cuiab%C3%A1%20-%20MT!5e0!3m2!1spt-BR!2sbr!4v1680731766881!5m2!1spt-BR!2sbr"
+                        class="maps" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="botaoMaps">
+                        <button>Traçar rota</button>
                     </div>
-
-                    <div>
-                        Whatsapp<br>
-                        (33) 3333-3333
-                    </div>
-
-                    <div>
-                        Instagram<br>
-                        @seuinstagram
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7685.3006039353395!2d-56.00149657269705!3d-15.610321823552109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939da531617a0115%3A0x1818f4f1a6f0b01a!2sOsmar%20Cabral%2C%20Cuiab%C3%A1%20-%20MT!5e0!3m2!1spt-BR!2sbr!4v1680731766881!5m2!1spt-BR!2sbr"
-                    width="750" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-                <div class="botaoMaps">
-                    <button>Áreas de atuação</button>
                 </div>
             </div>
         </div>
@@ -54,16 +57,54 @@ export default {
 
 <style>
 .container-contato {
+    width: 100vw;
+}
+
+.pai-contato {
     background-color: #495867;
     padding: 20px;
-}
-
-.contato{
-
-}
-
-.container-contato {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-maps {
+    display: flex;
+    justify-content: center;
+}
+
+.maps {
+    width: 750px;
+    height: 300px;
+}
+
+.text {
+    margin: 25px;
+    color: white;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+}
+
+.meio-contato {
+    margin-left: 15px;
+    padding: 30px;
+    margin: 15px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #dbdee1;
+}
+
+.meio-contato h3 {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .botaoMaps {
@@ -75,4 +116,25 @@ export default {
     width: 250px;
     padding: 15px;
     border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+
+    .pai-contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .maps {
+        width: 360px;
+        height: 300px;
+    }
+    .container-maps {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 }</style>

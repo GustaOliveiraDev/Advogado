@@ -1,5 +1,5 @@
 <template>
-    <div class="caontainer-rodape">
+    <div class="container-rodape">
         <footer class="rodape">
             <div class="infor">
                 <div>LADC</div>
@@ -21,6 +21,10 @@ export default {
 </script>
 
 <style>
+
+.container-rodape{
+    width: 100vw;
+}
 
 .rodape {
     background:#495867 ;
