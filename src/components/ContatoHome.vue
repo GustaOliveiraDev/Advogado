@@ -71,6 +71,7 @@ export default {
 
 .container-maps {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -88,8 +89,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 300px;
+    
 }
 
 .meio-contato {
@@ -131,6 +131,13 @@ export default {
         width: 360px;
         height: 300px;
     }
+    .contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+}
     .container-maps {
     display: flex;
     justify-content: center;

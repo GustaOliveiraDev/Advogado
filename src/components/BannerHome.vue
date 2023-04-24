@@ -95,12 +95,12 @@ export default {
     display: flex;
     text-align: center;
     border-radius: 15px;
-    height: 195px;
-    width: 340px;
 }
 
 
 .imgLogo-container {
+    height: 750px;
+    width: 340px;
     padding: 25px;
     display: flex;
     text-align: center;
