@@ -1,5 +1,7 @@
 <template>
     <div class="container-contato">
+       
+
         <div class="pai-contato">
             <div class="text">
 
@@ -8,8 +10,12 @@
                 <h1>empresarial<br></h1>
 
 
-                Expert na prevenção de riscos às empresas e na proposição de mecanismos
-                para fortalecimento do negócio. Agende seu horário
+               <h3> Expert na prevenção de riscos às empresas e na proposição de mecanismos
+                para fortalecimento do negócio. Agende seu horário</h3>
+
+               
+                
+
             </div>
 
             <div class="container-maps">
@@ -46,6 +52,8 @@
                 </div>
             </div>
         </div>
+     
+
     </div>
 </template>
 
@@ -58,10 +66,12 @@ export default {
 <style>
 .container-contato {
     width: 100vw;
+
 }
 
+
 .pai-contato {
-    background-color: #495867;
+    background-color: #4F4F4F;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -83,13 +93,31 @@ export default {
 .text {
     margin: 25px;
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text h2 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.text h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.text h3 {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .contato {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .meio-contato {
@@ -99,7 +127,7 @@ export default {
     width: 250px;
     padding: 15px;
     border-radius: 25px;
-    background-color: #dbdee1;
+    background: #f9f9f9;
 }
 
 .meio-contato h3 {
@@ -113,6 +141,11 @@ export default {
 }
 
 .botaoMaps button {
+    border: none;
+    cursor: pointer;
+    background: #dcb675;
+    color: white;
+    font-weight: bold;
     width: 250px;
     padding: 15px;
     border-radius: 25px;
@@ -131,17 +164,24 @@ export default {
         width: 360px;
         height: 300px;
     }
+
     .contato {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .container-contato {
+    width: 100vw;
+ 
 }
+
     .container-maps {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 
 }</style>

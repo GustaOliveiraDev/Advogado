@@ -1,62 +1,53 @@
 <template>
   <main class="container">
 
-    <div>
-      <HeaderMenu />
-    </div>
+ 
+      <Headerr />
+
+      <Apresentacao />
+   
+      <Contato />
     
-    <div>
-      <BannerHome />
-    </div>
+      <Blogs />
 
-    <div>
-      <ContatoHome />
-
-    </div>
-
-    <div>
-      <DiretoriasHome />
-    </div>
-
-    <div>
-      <FooterMenu />
-    </div>
+      <Footerr />
+ 
 
   </main>
 </template>
 
 <script>
-import HeaderMenu from './components/HeaderMenu'
-import BannerHome from './components/BannerHome'
-import ContatoHome from './components/ContatoHome.vue'
-import DiretoriasHome from './components/Diretorias/DiretoriasHome'
+import Headerr from './components/headerGlobal.vue'
+import Apresentacao from './components/apresentacaoHome.vue'
+import Contato from './components/ContatoHome.vue'
+import Blogs from './components/Blogs/BlogsHome.vue'
 
-
-import FooterMenu from './components/FooterMenu'
+import Footerr from './components/footerGlobal.vue'
 
 export default {
+
   name: 'App',
   components: {
 
-    HeaderMenu,
-    BannerHome,
-    ContatoHome,
-    DiretoriasHome,
-    FooterMenu,
+    Headerr,
+    Apresentacao,
+    Contato,
+    Blogs,
+    Footerr,
   }
 }
 </script>
 
 <style>
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  background: #f1f1f3;
-  width: 100vh;
-  height: 100vh;
+  background: #f9f9f9;
 }
 </style>

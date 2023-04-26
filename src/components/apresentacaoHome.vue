@@ -1,21 +1,20 @@
 <template>
     <div class="container-home">
 
-        <div class="banner-pai">
+            <img class="imgLogo"
+                src="../../public/direotias/fuxeassociados.adv.br-advocacia-empresarial-slider-leilao-de-imoveis.png" alt="">
 
-            <div class="imgLogo-container">
-                <img class="imgLogo"
-                    src="../../public/Advogada-Cristina-Vasconcelos-pbuu9qaqqe82ronozu4uis5taeshlecx22rw5e9sqm.jpg" alt="">
-            </div>
 
             <div class="apresentação">
 
                 <div class="titulo-home">
-                    <h4> Cristina Vasconcelos</h4>
-                    <h1>Advogada empresarial</h1>
+                    <h1> Cristina Vasconcelos</h1>
+                    <h2>Advogada empresarial</h2>
+                   <h3>
                     Tenho por objetivo oferecer um serviço profissional e atendimento<br>
                     personalizado, com foco no seu encantamento.Atingindo resultados e <br>
                     ultrapassando expectativas.
+                   </h3>
                 </div>
 
                 <div class="cads-container">
@@ -34,7 +33,7 @@
 
                     <div class="cadsHome">
                         <div class="paicadsImg">
-                            <img class="imgcads" src="../../public/Trabalhista.jpg" alt="">
+                            <img class="imgcads" src="../../public/direotias/Servico-digital-pbpi6kd4y9t1mh0pkn89rjpjefvltdtbhxjq8h41ps.jpg" alt="">
                         </div>
                         <div class="conteudo-cads">
                             <h1>Direito Digital</h1>
@@ -45,7 +44,7 @@
 
                     <div class="cadsHome">
                         <div class="paicadsImg">
-                            <img class="imgcads" src="../../public/Trabalhista.jpg" alt="">
+                            <img class="imgcads" src="../../public/direotias/Servico-contratos-pbpi6wl1f49rteiylaif5ymj4g7dlg5tvm11h2lxgw.jpg" alt="">
                         </div>
                         <div class="conteudo-cads">
                             <h1>Direito Trabalhista</h1>
@@ -54,13 +53,11 @@
                         </div>
                     </div>
 
-                    <div class="botao">
-                        <button>Áreas de atuação</button>
-                    </div>
+
 
                 </div>
             </div>
-        </div>
+     
     </div>
 </template>
 
@@ -73,38 +70,35 @@ export default {
 <style>
 .container-home {
     width: 100vw;
-}
-
-.banner-pai {
-    background: #f1f1f3;
+    margin-bottom: 50px;
+    background: #f9f9f9;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .apresentação {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 50px;
+    margin-left: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+    width: 600px;
+}
 
-    }
 
 .imgLogo {
     display: flex;
     text-align: center;
-    border-radius: 15px;
-}
-
-
-.imgLogo-container {
-    height: 750px;
-    width: 340px;
-    padding: 25px;
-    display: flex;
-    text-align: center;
     justify-content: center;
+    border-radius: 15px;
+    margin-right: 100px;
+    background-color: #4F4F4F;
+    padding: 25px;
+    height: 700px;
+    width: 490px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .paicadsImg {
@@ -121,18 +115,39 @@ export default {
 
 
 .titulo-home {
-    height: 130px;
-    width: 500px;
+    height: 140px;
+    width: 560px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 15px;
+    margin-left: 15px;
     color: #1b2a41;
+    margin-bottom: 35px;
 }
 
-.titulo-home h4 {
-    font-size: 20px;
-    font-weight: bold;
+.titulo-home h1 {
+    font-size: 16px;
+    margin-top: 15px;
+
+}
+
+.titulo-home h2 {
+    font-size: 36px;
+  
+    margin: 5px 0px 5px 0px;
+}
+
+.titulo-home h3 {
+    font-size: 16px;
+  
+    margin-bottom: 50px;
+}
+
+.cads-container {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 
@@ -145,30 +160,19 @@ export default {
 }
 
 .conteudo-cads h1 {
-
     font-size: 16px;
-    font-weight: bold;
 }
 
-.botao {
-    margin-left: 15px;
-    padding: 30px;
-}
-
-.botao button {
-    width: 250px;
-    padding: 15px;
-    border-radius: 25px;
-}
 
 .cadsHome {
-    height: 130px;
-    width: 500px;
+    height: 140px;
+    width: 560px;
     display: flex;
-    margin: 15px;
+    margin-top: 30px;
     justify-content: center;
-    border-radius: 15px;
-    background: #ffffff;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #f9f9f9;
 }
 
 .banner {
@@ -178,8 +182,9 @@ export default {
 
 @media (max-width: 768px) {
 
-    .banner-pai {
-
+    .container-home {
+        margin-bottom: 50px;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -189,49 +194,56 @@ export default {
 
     .titulo-home {
         height: 130px;
-        width: 500px;
+        width: 300px;
+        padding: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         flex-direction: column;
-        margin: 15px;
+        margin: 50px 0px 50px 0px;
         color: #1b2a41;
     }
 
     .apresentação {
+        margin: 0px;
+       height: 1100px;
+        width: 350px;
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        /* display: none; */
     }
-
-
-
-    .cadsHome {
-    height: 300px;
-    width: 350px;
-    display: flex;
-    margin: 15px;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 15px;
-    background: #ffffff;
-}
-
-.conteudo-cads {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    font-size: 14px;
-    padding: 5px;
-
-}
+    
     .imgLogo {
+        margin: 0px;
+        height: 500px;
         width: 350px;
+        margin-bottom: 50px;
+        margin-right: 0px;
 
     }
+    .cadsHome {
+        height: 250px;
+        width: 300px;
+        display: flex;
+        margin: 15px;
+        justify-content: center;
+        flex-direction: column;
+        background: #ffffff;
+    }
+
+    .conteudo-cads {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px;
+
+    }
+
 
     .cads-container {
 
@@ -241,13 +253,7 @@ export default {
         flex-direction: column;
     }
 
-    .botao {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 15px;
-        padding: 30px;
-    }
+  
 
 }
 </style>
