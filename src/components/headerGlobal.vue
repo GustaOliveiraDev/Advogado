@@ -16,44 +16,38 @@
 
 
       <div class="menu-items">
-        <div class="items"><a href="#home">Home</a></div>
-        <div class="items"><a href="#diretorias">Diretorias</a></div>
-        <div class="items"><a href="#aplicacao">Aplicação</a></div>
-        <div class="items"><a href="#contato">Contato</a></div>
+        <div class="items"><a href="/">Home</a></div>
+        <div class="items"><a href="#aplicacao">Atuação</a></div>
+        <div class="items"><a href="#contato">Escritório</a></div>
+        <div class="items"><a href="#diretorias">Contato</a></div>
       </div>
 
     </div>
 
-    <div class="lupa">
+    <!-- <div class="lupa">
       <Magnify class="magnify" />
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 import { ref } from 'vue';
-import Magnify from 'vue-material-design-icons/Magnify.vue';
+// import Magnify from 'vue-material-design-icons/Magnify.vue';
 export default {
   components: {
-    Magnify
+    // Magnify
   },
   setup() {
     let toggleMenu = ref(true)
-
     return {
       toggleMenu
     }
   },
-
   methods: {
-
     Sidebar() {
       this.toggleMenu = !this.toggleMenu
     }
-
   }
-
-
 }
 </script>
 

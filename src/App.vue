@@ -1,17 +1,26 @@
 <template>
   <main class="container">
 
- 
-      <Headerr />
 
-      <Apresentacao />
-   
-      <Contato />
-    
-      <Blogs />
+    <Headerr />
 
-      <Footerr />
- 
+    <div class="whatsapp">
+      <div class="butao-whatsapp-online">
+        Online Agora
+      </div>
+      <button class="butao-whatsapp">
+        Agende seu Horário
+      </button>
+    </div>
+
+    <Apresentacao />
+
+    <Contato />
+
+    <Blogs />
+
+    <Footerr />
+
 
   </main>
 </template>
@@ -21,7 +30,6 @@ import Headerr from './components/headerGlobal.vue'
 import Apresentacao from './components/apresentacaoHome.vue'
 import Contato from './components/ContatoHome.vue'
 import Blogs from './components/Blogs/BlogsHome.vue'
-
 import Footerr from './components/footerGlobal.vue'
 
 export default {
@@ -39,7 +47,8 @@ export default {
 </script>
 
 <style>
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -49,5 +58,86 @@ export default {
 
 body {
   background: #f9f9f9;
+}
+.whatsapp{
+  position: fixed;
+  z-index: 10000;
+  right: 50px;
+  bottom: 25px;
+}
+
+.butao-whatsapp{
+
+  border: none;
+  cursor: pointer;
+  background: #23a455;
+  color: white;
+  font-weight: bold;
+  width: 250px;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.butao-whatsapp-online{
+
+  font-size: 10px;
+text-align: center;
+  position: fixed;
+  right: 60px;
+  bottom: 71px;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  background: #ca2935;
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  padding: 5px;
+  border-radius: 25px;
+
+}
+
+@media (max-width: 768px) {
+  .whatsapp{
+  position: fixed;
+  z-index: 10000;
+  right: 15px;
+  bottom: 15px;
+}
+
+.butao-whatsapp{
+
+border: none;
+cursor: pointer;
+background: #23a455;
+color: white;
+font-weight: bold;
+width: 250px;
+padding: 15px;
+border-radius: 25px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.butao-whatsapp-online{
+
+font-size: 10px;
+text-align: center;
+position: fixed;
+right: 25px;
+bottom: 60px;
+white-space: nowrap;
+border: none;
+cursor: pointer;
+background: #ca2935;
+color: white;
+font-weight: bold;
+width: 90px;
+padding: 5px;
+border-radius: 25px;
+
+}
+
+
 }
 </style>

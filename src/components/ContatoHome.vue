@@ -128,11 +128,14 @@ export default {
     padding: 15px;
     border-radius: 25px;
     background: #f9f9f9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 50px;
 }
 
 .meio-contato h3 {
     font-size: 16px;
     font-weight: bold;
+ 
 }
 
 .botaoMaps {
@@ -141,6 +144,7 @@ export default {
 }
 
 .botaoMaps button {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: none;
     cursor: pointer;
     background: #dcb675;
@@ -159,6 +163,18 @@ export default {
         align-items: center;
         flex-direction: column;
     }
+
+    .meio-contato {
+    margin-left: 15px;
+    padding: 30px;
+    margin: 15px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 25px;
+    background: #f9f9f9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 15px;
+}
 
     .maps {
         width: 360px;

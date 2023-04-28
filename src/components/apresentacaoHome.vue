@@ -21,7 +21,7 @@
 
                     <div class="cadsHome">
                         <div class="paicadsImg">
-                            <img class="imgcads" src="../../public/Trabalhista.jpg" alt="">
+                            <img class="imgcads" src="../../public/direotias/libra.png" alt="">
                         </div>
 
                         <div class="conteudo-cads">
@@ -33,7 +33,7 @@
 
                     <div class="cadsHome">
                         <div class="paicadsImg">
-                            <img class="imgcads" src="../../public/direotias/Servico-digital-pbpi6kd4y9t1mh0pkn89rjpjefvltdtbhxjq8h41ps.jpg" alt="">
+                            <img class="imgcads" src="../../public/direotias/libra.png" alt="">
                         </div>
                         <div class="conteudo-cads">
                             <h1>Direito Digital</h1>
@@ -44,7 +44,7 @@
 
                     <div class="cadsHome">
                         <div class="paicadsImg">
-                            <img class="imgcads" src="../../public/direotias/Servico-contratos-pbpi6wl1f49rteiylaif5ymj4g7dlg5tvm11h2lxgw.jpg" alt="">
+                            <img class="imgcads" src="../../public/direotias/libra.png" alt="">
                         </div>
                         <div class="conteudo-cads">
                             <h1>Direito Trabalhista</h1>
@@ -106,11 +106,13 @@ export default {
     justify-content: center;
     text-align: center;
     padding: 10px;
-    border-radius: 15px;
+    
 }
 
 .imgcads {
     border-radius: 15px;
+    width: 100px;
+    height: 100px;
 }
 
 
@@ -170,9 +172,9 @@ export default {
     display: flex;
     margin-top: 30px;
     justify-content: center;
-
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
     background: #f9f9f9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .banner {

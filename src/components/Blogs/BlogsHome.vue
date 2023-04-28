@@ -7,7 +7,7 @@
     </div>
 
     <carousel :items-to-show="1" :breakpoints="breakpoints" class="container-diretoria">
-      <slide v-for="slide in 1" :key="slide">
+      <slide v-for="slide in 2" :key="slide">
         <div class="diretorias">
           <div class="cads-diretoria">
             <picture class="pai-banner">
@@ -30,7 +30,7 @@
         </div>
       </slide>
 
-      <slide v-for="slide in 1" :key="slide">
+      <slide v-for="slide in 2" :key="slide">
         <div class="diretorias">
           <div class="cads-diretoria">
             <picture class="pai-banner">
@@ -53,7 +53,7 @@
         </div>
       </slide>
 
-      <slide v-for="slide in 1" :key="slide">
+      <slide v-for="slide in 2" :key="slide">
         <div class="diretorias">
           <div class="cads-diretoria">
             <picture class="pai-banner">
@@ -221,6 +221,7 @@ export default {
   justify-content: center;
   white-space: nowrap;
   background: #dcb675;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 6px;
   border-radius: 10px;
   width: 100px;
@@ -235,6 +236,11 @@ export default {
     display: flex;
 
   }
+
+  .text-blogs {
+  margin-bottom: 50px;
+border: none;
+}
 
   .diretorias {
     width: 100vw;
