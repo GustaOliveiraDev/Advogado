@@ -253,19 +253,24 @@ export default {
         margin-right: 0px;
     }
 
+    .paicadsImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .cadsHome {
+        flex-direction: column;
         height: 250px;
         width: 300px;
-        display: flex;
         margin: 15px;
-        justify-content: center;
-        flex-direction: column;
         background: #ffffff;
     }
 
     .conteudo-cads {
         display: flex;
         justify-content: center;
+        align-content: center;
         flex-direction: column;
         text-align: center;
         font-size: 14px;

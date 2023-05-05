@@ -130,6 +130,7 @@ export default {
     right: 20px;
 
     margin:0;
+    padding: 5px;
     width: 100px;
     height: 80px;
   
