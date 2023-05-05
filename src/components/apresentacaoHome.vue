@@ -1,63 +1,66 @@
 <template>
     <div class="container-home">
 
-            <img class="imgLogo"
-                src="../../public/direotias/fuxeassociados.adv.br-advocacia-empresarial-slider-leilao-de-imoveis.png" alt="">
+        <div class="img-logo-container">
+            <img class="imgLogo" src="../../public/direotias/Advogada-Cristina.jpg" alt="">
+        </div>
 
 
-            <div class="apresentação">
+        <div class="apresentação">
 
-                <div class="titulo-home">
-                    <h1> Cristina Vasconcelos</h1>
-                    <h2>Advogada empresarial</h2>
-                   <h3>
+            <div class="titulo-home">
+                <h1> Cristina Vasconcelos</h1>
+                <h2>Advogada empresarial</h2>
+                <h3>
                     Tenho por objetivo oferecer um serviço profissional e atendimento<br>
                     personalizado, com foco no seu encantamento.Atingindo resultados e <br>
                     ultrapassando expectativas.
-                   </h3>
-                </div>
-
-                <div class="cads-container">
-
-                    <div class="cadsHome">
-                        <div class="paicadsImg">
-                            <img class="imgcads" src="../../public/direotias/libra.png" alt="">
-                        </div>
-
-                        <div class="conteudo-cads">
-                            <h1>Direito Trabalhista</h1>
-                            Serviços jurídicos para empresas nas diversas situações
-                            trabalhistas, como contratação e demissão de funcionários.
-                        </div>
-                    </div>
-
-                    <div class="cadsHome">
-                        <div class="paicadsImg">
-                            <img class="imgcads" src="../../public/direotias/libra.png" alt="">
-                        </div>
-                        <div class="conteudo-cads">
-                            <h1>Direito Digital</h1>
-                            Trata diretamente do direito digital, que hoje em dia ganha
-                            cada vez mais importância na era tecnologia
-                        </div>
-                    </div>
-
-                    <div class="cadsHome">
-                        <div class="paicadsImg">
-                            <img class="imgcads" src="../../public/direotias/libra.png" alt="">
-                        </div>
-                        <div class="conteudo-cads">
-                            <h1>Direito Trabalhista</h1>
-                            Serviços jurídicos para empresas nas diversas situações
-                            trabalhistas, como contratação e demissão de funcionários.
-                        </div>
-                    </div>
-
-
-
-                </div>
+                </h3>
             </div>
-     
+
+            <hr class="hr1">
+
+            <div class="cads-container">
+
+                <div class="cadsHome">
+                    <div class="paicadsImg">
+                        <img class="imgcads" src="../../public/direotias/direito-trabalhista.jpg" alt="">
+                    </div>
+
+                    <div class="conteudo-cads">
+                        <h1>Direito Trabalhista</h1>
+                        Serviços jurídicos para empresas nas diversas situações
+                        trabalhistas, como contratação e demissão de funcionários.
+                    </div>
+                </div>
+
+                <div class="cadsHome">
+                    <div class="paicadsImg">
+                        <img class="imgcads" src="../../public/direotias/Servico-digital.jpg" alt="">
+                    </div>
+                    <div class="conteudo-cads">
+                        <h1>Direito Digital</h1>
+                        Trata diretamente do direito digital, que hoje em dia ganha
+                        cada vez mais importância na era tecnologia
+                    </div>
+                </div>
+
+                <div class="cadsHome">
+                    <div class="paicadsImg">
+                        <img class="imgcads" src="../../public/direotias/direito-empresarial.jpg" alt="">
+                    </div>
+                    <div class="conteudo-cads">
+                        <h1>Direito Empresarial</h1>
+                        Serviços jurídicos para empresas nas diversas situações
+                        trabalhistas, como contratação e demissão de funcionários.
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
     </div>
 </template>
 
@@ -87,30 +90,46 @@ export default {
     width: 600px;
 }
 
+.img-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 100px;
+    background: #dcb675;
+    height: 710px;
+    width: 490px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 
 .imgLogo {
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    border-radius: 15px;
-    margin-right: 100px;
-    background-color: #4F4F4F;
-    padding: 25px;
     height: 700px;
     width: 490px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.hr1 {
+    border: 2px solid #dcb675;
+
+    width: 100%;
 }
 
 .paicadsImg {
     display: flex;
     justify-content: center;
-    text-align: center;
-    padding: 10px;
-    
+    align-items: center;
+    padding-left: 10px;
+
+
 }
 
 .imgcads {
     border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 100px;
     height: 100px;
 }
@@ -124,7 +143,7 @@ export default {
     flex-direction: column;
     margin-left: 15px;
     color: #1b2a41;
-    margin-bottom: 35px;
+
 }
 
 .titulo-home h1 {
@@ -135,13 +154,13 @@ export default {
 
 .titulo-home h2 {
     font-size: 36px;
-  
+
     margin: 5px 0px 5px 0px;
 }
 
 .titulo-home h3 {
     font-size: 16px;
-  
+
     margin-bottom: 50px;
 }
 
@@ -158,7 +177,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     font-size: 14px;
-    padding: 5px;
+    padding: 15px;
 }
 
 .conteudo-cads h1 {
@@ -209,23 +228,31 @@ export default {
 
     .apresentação {
         margin: 0px;
-       height: 1100px;
+        height: 1100px;
         width: 350px;
         display: flex;
         align-items: center;
         flex-direction: column;
-
-        /* display: none; */
     }
-    
+
+    .img-logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px 50px 0px;
+        background: #dcb675;
+        height: 510px;
+        width: 350px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
     .imgLogo {
         margin: 0px;
         height: 500px;
         width: 350px;
-        margin-bottom: 50px;
         margin-right: 0px;
-
     }
+
     .cadsHome {
         height: 250px;
         width: 300px;
@@ -255,7 +282,7 @@ export default {
         flex-direction: column;
     }
 
-  
+
 
 }
 </style>

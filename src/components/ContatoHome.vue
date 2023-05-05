@@ -23,18 +23,35 @@
 
 
                     <div class="meio-contato">
-                        Telefone<br>
-                        <h3>(33) 3333-3333</h3>
-                    </div>
-
-                    <div class="meio-contato">
-                        Whatsapp<br>
+                       <div class="icon-contate">
+                        <svg-icon type="mdi" :path="Phone"></svg-icon>
+                       </div>
+                       <div class="text-contato">
+                        Telefone
                         <h3> (33) 3333-3333</h3>
+                       </div>
                     </div>
 
                     <div class="meio-contato">
-                        Instagram<br>
-                        <h3> @seuinstagram</h3>
+                        <div class="icon-contate">
+                        <svg-icon type="mdi" :path="Whatsapp"></svg-icon>
+                       </div>
+                       <div class="text-contato">
+                        Whatsapp
+                        <h3> (33) 3333-3333</h3>
+                       </div>
+                        
+                    </div>
+
+                    <div class="meio-contato">
+                        <div class="icon-contate">
+                        <svg-icon type="mdi" :path="Instagram"></svg-icon>
+                       </div>
+                       <div class="text-contato">
+                        Instagram
+
+                        <h3>@seuinstagram</h3>
+                       </div>
                     </div>
 
                 </div>
@@ -47,7 +64,10 @@
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                     <div class="botaoMaps">
-                        <button>Traçar rota</button>
+                        <button>Traçar rota
+                            <svg-icon type="mdi" :path="MapMarker"></svg-icon>
+                        </button>
+                    
                     </div>
                 </div>
             </div>
@@ -58,8 +78,24 @@
 </template>
 
 <script>
-export default {
+import SvgIcon from '@jamescoyle/vue-icon';
+import { mdiMapMarker } from '@mdi/js';
+import { mdiInstagram } from '@mdi/js';
+import { mdiPhone } from '@mdi/js';
+import { mdiWhatsapp } from '@mdi/js';
 
+export default {
+    components: {
+    SvgIcon
+  },
+  data() {
+    return {
+        MapMarker: mdiMapMarker,
+        Phone: mdiPhone,
+        Instagram: mdiInstagram,
+        Whatsapp: mdiWhatsapp,
+    }
+  }
 }
 </script>
 
@@ -88,6 +124,17 @@ export default {
 .maps {
     width: 750px;
     height: 300px;
+}
+.text-contato{
+    
+    text-align: start;
+}
+.icon-contate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px ;
+    font-size: 25px;
 }
 
 .text {
@@ -121,13 +168,18 @@ export default {
 }
 
 .meio-contato {
+    display: flex;
+    justify-content: center;
+
+
     margin-left: 15px;
     padding: 30px;
     margin: 15px;
     width: 250px;
     padding: 15px;
     border-radius: 25px;
-    background: #f9f9f9;
+    background: #dcb675;
+    color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: 50px;
 }
@@ -141,10 +193,15 @@ export default {
 .botaoMaps {
     margin-left: 15px;
     padding: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .botaoMaps button {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     cursor: pointer;
     background: #dcb675;
@@ -171,7 +228,7 @@ export default {
     width: 250px;
     padding: 15px;
     border-radius: 25px;
-    background: #f9f9f9;
+    background: #dcb675;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: 15px;
 }

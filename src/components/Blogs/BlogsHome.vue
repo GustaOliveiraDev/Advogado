@@ -23,6 +23,7 @@
               <div class="butao-diretorias">
                 <button>
                   Leia mais
+                  <svg-icon type="mdi" :path="MenuRight"></svg-icon>
                 </button>
               </div>
             </div>
@@ -35,7 +36,7 @@
           <div class="cads-diretoria">
             <picture class="pai-banner">
               <img class="banner-diretorias"
-                src="../../../public/direotias/Advogado-10-pbpikasbqdoesr94irwr6ucncgccgabsc3trfb6n6s.jpg"
+                src="../../../public/direotias/direito-digital.jpg"
                 alt="cienciaImagem">
             </picture>
             <div class="nome-botao">
@@ -46,6 +47,7 @@
               <div class="butao-diretorias">
                 <button>
                   Leia mais
+                  <svg-icon type="mdi" :path="MenuRight"></svg-icon>
                 </button>
               </div>
             </div>
@@ -69,6 +71,7 @@
               <div class="butao-diretorias">
                 <button>
                   Leia mais
+                  <svg-icon type="mdi" :path="MenuRight"></svg-icon>
                 </button>
               </div>
             </div>
@@ -85,18 +88,26 @@
 </template>
 
 <script>
+import SvgIcon from '@jamescoyle/vue-icon';
+import { mdiMenuRight } from '@mdi/js';
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
 
 export default {
   name: 'App',
   components: {
+    SvgIcon,
     Carousel,
     Slide,
     Navigation,
   },
+
+ 
+
   data: () => ({
 
+    MenuRight: mdiMenuRight,
+ 
     settings: {
       itemsToShow: 1,
       snapAlign: 'center',
@@ -110,6 +121,11 @@ export default {
         snapAlign: 'center',
       },
     },
+
+    
+      
+     
+    
   })
 }
 </script>
@@ -131,6 +147,8 @@ export default {
   width: 1200px;
   justify-content: center;
   display: flex;
+  
+
 
 }
 
@@ -148,6 +166,7 @@ export default {
 .diretorias {
   width: 100vw;
   display: flex;
+
   justify-content: center;
   align-items: center;
 }
@@ -194,6 +213,7 @@ export default {
   margin: 10px;
   width: 360px;
   height: 450px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
 }
 
@@ -215,6 +235,7 @@ export default {
 }
 
 .butao-diretorias button {
+  align-items: center;
   display: flex;
   border: none;
   cursor: pointer;

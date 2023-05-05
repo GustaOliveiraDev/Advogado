@@ -24,18 +24,16 @@
 
     </div>
 
-    <!-- <div class="lupa">
-      <Magnify class="magnify" />
-    </div> -->
+   
   </div>
 </template>
 
 <script>
 import { ref } from 'vue';
-// import Magnify from 'vue-material-design-icons/Magnify.vue';
+
 export default {
   components: {
-    // Magnify
+
   },
   setup() {
     let toggleMenu = ref(true)
@@ -128,7 +126,16 @@ export default {
   }
 
   .imgharder{
-    display: none;
+    position: absolute;
+    right: 20px;
+
+    margin:0;
+    width: 100px;
+    height: 80px;
+  
+  
+
+
 }
 
   .navbar-container {

@@ -9,37 +9,63 @@
             </div>
 
             <div class="infor1">
-                <h1> Cristina Fasconcelos<br> </h1>
+                <div class="titulo-footer">
+                    <h1> Cristina Fasconcelos </h1>
 
-                <h2> Advogada empresarial<br> </h2>
+                    <h2> Advogada empresarial </h2>
+                </div>
 
-                <p> É especialista em contratos e possui experiência na<br>
-                    assessoria jurídica de empresas e startups,<br></p>
+                <div class="text-footer">
+                    É especialista em contratos e possui experiência na<br>
+                    assessoria jurídica de empresas e startups
+                </div>
 
                 <div>
                     <button class="butao-footer">
                         Fale comigo
+                        <svg-icon type="mdi" :path="MenuRight"></svg-icon>
                     </button>
                 </div>
             </div>
 
             <div class="infor2">
-                <h1>Fale comigo</h1>
+                <div class="titulo-footer2">
+                    <h1>Fale comigo</h1>
 
-                <h2>Será um prazer lhe atender</h2>
+                    <h2>Será um prazer lhe atender</h2>
+                </div>
 
-                <p>R. Diógenes Chianca,1777 - Água Fria<br>
-                    Entre em contato<br>
-                    (33) 3333-3333<br>
-                </p>
+                <div class="contato-footer">
+                    <svg-icon type="mdi" :path="MapMarker"></svg-icon>
+                    <p>Cuiabá-Centro</p>
+                </div>
+
+                <div class="contato-footer">
+                    <svg-icon type="mdi" :path="Phone"></svg-icon>
+                    <p>(33) 3333-3333</p>
+                </div>
+
             </div>
         </footer>
     </div>
 </template>
 
 <script>
+import SvgIcon from '@jamescoyle/vue-icon';
+import { mdiMapMarker } from '@mdi/js';
+import { mdiPhone } from '@mdi/js';
+import { mdiMenuRight } from '@mdi/js';
 export default {
-
+    components: {
+        SvgIcon
+    },
+    data() {
+        return {
+            MapMarker: mdiMapMarker,
+            Phone: mdiPhone,
+            MenuRight: mdiMenuRight,
+        }
+    }
 }
 </script>
 
@@ -49,6 +75,7 @@ export default {
     cursor: pointer;
     display: flex;
     justify-content: center;
+    align-items: center;
     white-space: nowrap;
     background: #dcb675;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -57,6 +84,12 @@ export default {
     width: 300px;
     color: white;
     margin: 15px 0px 0px 0px;
+}
+
+.contato-footer {
+    display: flex;
+    justify-content: start;
+    margin-top: 15px;
 }
 
 .infor1 h1 {
@@ -81,6 +114,14 @@ export default {
     font-weight: bold;
     margin-bottom: 5px;
 
+}
+
+.titulo-footer2 {
+    margin-top: 0;
+}
+
+.text-footer {
+    margin-top: 15px;
 }
 
 .container-rodape {
@@ -109,103 +150,53 @@ export default {
 }
 
 .infor1 {
-    text-align: start;
-    margin-left: 25px;
+    height: 160px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
+    margin-left: 25px;
     flex-direction: column;
 
 }
 
 .infor2 {
+    height: 160px;
     display: flex;
-    text-align: start;
     margin-left: 25px;
-    justify-content: space-between;
     flex-direction: column;
 }
 
 @media (max-width: 768px) {
 
-    .infor1 h2 {
-
-        margin-top: 15px;
-        font-size: 18px;
-        font-weight: 400;
-        display: flex;
+    .infor1 {
         text-align: center;
+        margin: 0;
         justify-content: center;
-        flex-direction: column;
-
-    }
-
-    .infor1 h1 {
-        font-size: 28px;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-
-    .infor1 p {
-
-        margin-top: 15px;
-        font-size: 15px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-
+        align-items: center;
     }
 
     .infor2 {
-
-        margin-top: 15px;
-        font-size: 18px;
-        font-weight: 400;
-        display: flex;
         text-align: center;
+        display: flex;
         justify-content: center;
-        flex-direction: column;
+        align-content: center;
+        margin: 0;
 
     }
 
-    .infor2 p {
-        margin-bottom: 35px;
-        margin-top: 15px;
-        font-size: 15px;
+    .butao-footer {
+        border: none;
+        cursor: pointer;
         display: flex;
-        text-align: center;
         justify-content: center;
-        flex-direction: column;
-
-    }
-
-    .imgFooter {
-        border-radius: 15px;
-        height: 140px;
-        width: 130px;
+        align-items: center;
+        white-space: nowrap;
+        background: #dcb675;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-
-
-    .infor1 h2 {
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 5px;
-
-    }
-
-
-    .infor2 h1 {
-        font-size: 28px;
-        font-weight: bold;
-        margin-bottom: 5px;
-
-    }
-
-    .infor2 h2 {
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 5px;
+        padding: 10px;
+        border-radius: 25px;
+        width: 200px;
+        color: white;
 
     }
 
@@ -213,7 +204,7 @@ export default {
         height: 95vh;
         display: flex;
         justify-content: space-between;
-        padding: 35px;
+        padding: 40px;
         align-items: center;
         flex-direction: column;
 
