@@ -12,7 +12,7 @@
           <div class="cads-diretoria">
             <picture class="pai-banner">
               <img class="banner-diretorias"
-                src="../../../public/direotias/Advocacia-24-pbpi802cbeucwf47byjh2g2jjyygqui7n8k2dzf2lg.jpg"
+                src="../../public/direotias/Advocacia-24-pbpi802cbeucwf47byjh2g2jjyygqui7n8k2dzf2lg.jpg"
                 alt="cienciaImagem">
             </picture>
             <div class="nome-botao">
@@ -36,7 +36,7 @@
           <div class="cads-diretoria">
             <picture class="pai-banner">
               <img class="banner-diretorias"
-                src="../../../public/direotias/direito-digital.jpg"
+                src="../../public/direotias/direito-digital.jpg"
                 alt="cienciaImagem">
             </picture>
             <div class="nome-botao">
@@ -60,7 +60,7 @@
           <div class="cads-diretoria">
             <picture class="pai-banner">
               <img class="banner-diretorias"
-                src="../../../public/direotias/Advocacia-24-pbpi802cbeucwf47byjh2g2jjyygqui7n8k2dzf2lg.jpg"
+                src="../../public/direotias/Advocacia-24-pbpi802cbeucwf47byjh2g2jjyygqui7n8k2dzf2lg.jpg"
                 alt="cienciaImagem">
             </picture>
             <div class="nome-botao">

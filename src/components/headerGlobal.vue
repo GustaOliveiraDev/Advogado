@@ -16,20 +16,24 @@
 
 
       <div class="menu-items">
-        <div class="items"><a href="/">Home</a></div>
-        <div class="items"><a href="#aplicacao">Atuação</a></div>
-        <div class="items"><a href="#contato">Escritório</a></div>
-        <div class="items"><a href="#diretorias">Contato</a></div>
+        <router-link class="rotas" :to="{ name: 'Home' }">Home</router-link>
+        <router-link class="rotas" :to="{ name: 'Atuacao' }">Atuação</router-link>
+        <router-link class="rotas" :to="{ name: 'Contato' }">Contato</router-link>
+        <router-link class="rotas" :to="{ name: 'SobreNós' }">Sobre nós</router-link>
+      
       </div>
-
+      <router-view />
     </div>
 
-   
+  
   </div>
+
 </template>
 
 <script>
 import { ref } from 'vue';
+
+
 
 export default {
   components: {
@@ -37,6 +41,7 @@ export default {
   },
   setup() {
     let toggleMenu = ref(true)
+    // const route = useRoute();
     return {
       toggleMenu
     }
@@ -100,11 +105,24 @@ export default {
   text-decoration: none;
   color: white;
 }
+.rotas{
+  cursor: pointer;
+ 
+  margin-right: 15px;
+  text-decoration: none;
+  color: white;
+}
 
 .items a:hover {
   color: #dcb675;
   transition: 300ms;
 }
+
+.rotas a:hover {
+  color: #dcb675;
+  transition: 300ms;
+}
+
 
 .lupa {
   margin-right: 20px;

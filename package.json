@@ -19,6 +19,7 @@
     "gitart-scroll-carousel": "^1.2.4",
     "vue": "^3.2.13",
     "vue-material-design-icons": "^5.2.0",
+    "vue-router": "^4.1.6",
     "vue3-carousel": "^0.3.0"
   },
   "devDependencies": {

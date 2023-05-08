@@ -70,6 +70,7 @@ export default {
 </script>
 
 <style>
+
 .butao-footer {
     border: none;
     cursor: pointer;
