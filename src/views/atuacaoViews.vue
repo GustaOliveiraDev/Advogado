@@ -2,115 +2,120 @@
   <div class="container-contate">
     <Header />
 
-    <div class="whatsapp">
-      <div class="butao-whatsapp-online">
-        Online Agora
+    <whatsappbtn />
+
+    <div class="titulo-atuacao">
+      <div>
+       <h1> ÁREAS DE ATUAÇÃO</h1>
       </div>
-      <div class="div-whatsap">
-
-
-        <button class="butao-whatsapp">
-          <svg-icon class="icon" type="mdi" size='30' :path="path"></svg-icon>
-          Agende seu Horário
-        </button>
+      <div>
+     <h3>   REFERENCIA EM ATUAÇÃO JURIDICA</h3>
       </div>
     </div>
 
     <div class="tags">
       <div class="atuacaoLine">
-      <div class="atuacao">
-        <div>
-          <svg-icon class="icon" type="mdi" size={1} :path="Algema"></svg-icon>
-        </div>
-        <div>
+
+        <div class="atuacao">
           <div>
-            <h1>BANCÁRIO & FINANCEIRO</h1>
+            <svg-icon class="icon" type="mdi" size='80' :path="empresa"></svg-icon>
           </div>
           <div>
-           <p>Normas de direito público que visam a regulação</p>
+            <div>
+              <h1>EMPRESARIAL</h1>
+            </div>
+            <div>
+              <p>Normas de direito público que visam a regulação</p>
+            </div>
           </div>
         </div>
+        
+        <div class="atuacao">
+          <div>
+            <svg-icon class="icon" type="mdi" size='80' :path="tributario"></svg-icon>
+          </div>
+          <div>
+            <div>
+              <h1>TRIBUTÁRIO</h1>
+            </div>
+            <div>
+              <p>Conjunto das leis reguladoras da arrecadação
+                e fiscalização dos tributos.
+                Regulação das relações jurídicas.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="atuacao">
-        <div>
-          <svg-icon class="icon" type="mdi" size={1} :path="Algema"></svg-icon>
-        </div>
-        <div>
+
+      <div class="atuacaoLine">
+        <div class="atuacao">
           <div>
-            <h1>BANCÁRIO & FINANCEIRO</h1>
+            <svg-icon class="icon" type="mdi" size='80' :path="imoveis"></svg-icon>
           </div>
           <div>
-           <p>Normas de direito público que visam a regulação</p>
+            <div>
+              <h1>IMOBILIÁRIO</h1>
+            </div>
+            <div>
+              <p>Regulamenta vários aspectos da vida privada.
+                 Cuida dos fenômenos jurídicos aliados
+                  ao registro de imóveis.</p>
+            </div>
           </div>
         </div>
+
+        <div class="atuacao">
+          <div>
+            <svg-icon class="icon" type="mdi" size='80' :path="trabalho"></svg-icon>
+          </div>
+          <div>
+            <div>
+              <h1>TRABALHISTA</h1>
+            </div>
+            <div>
+              <p>Conjunto de normas jurídicas que
+                 regem as relações entre empregados e empregadores.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-    </div>
-
-
-    <div class="atuacaoLine">
-      <div class="atuacao">
-        <div>
-          <svg-icon class="icon" type="mdi" size={1} :path="Algema"></svg-icon>
-        </div>
-        <div>
+      <div class="atuacaoLine">
+        <div class="atuacao">
           <div>
-            <h1>BANCÁRIO & FINANCEIRO</h1>
+            <svg-icon class="icon" type="mdi" size='80' :path="notbook"></svg-icon>
           </div>
           <div>
-           <p>Normas de direito público que visam a regulação</p>
+            <div>
+              <h1>DIGITAL</h1>
+            </div>
+            <div>
+              <p>Conjunto de princípios jurídicos e de normas
+                 jurídicas voltado à proteção jurídica
+                  da qualidade do meio ambiente.</p>
+            </div>
           </div>
         </div>
+
+        <div class="atuacao">
+          <div>
+            <svg-icon class="icon" type="mdi" size='80' :path="Algema"></svg-icon>
+          </div>
+          <div>
+            <div>
+              <h1>PENAL</h1>
+            </div>
+            <div>
+              <p>Normas de direito público que visam a regulação</p>
+
+            </div>
+          </div>
+        </div>
+
       </div>
-
-      <div class="atuacao">
-        <div>
-          <svg-icon class="icon" type="mdi" size={1} :path="Algema"></svg-icon>
-        </div>
-        <div>
-          <div>
-            <h1>BANCÁRIO & FINANCEIRO</h1>
-          </div>
-          <div>
-           <p>Normas de direito público que visam a regulação</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="atuacaoLine">
-      <div class="atuacao">
-        <div>
-          <svg-icon class="icon" type="mdi" size={1} :path="Algema"></svg-icon>
-        </div>
-        <div>
-          <div>
-            <h1>BANCÁRIO & FINANCEIRO</h1>
-          </div>
-          <div>
-           <p>Normas de direito público que visam a regulação</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="atuacao">
-        <div>
-          <svg-icon class="icon" type="mdi" size={1} :path="Algema"></svg-icon>
-        </div>
-        <div>
-          <div>
-            <h1>BANCÁRIO & FINANCEIRO</h1>
-          </div>
-          <div>
-          <p>Normas de direito público que visam a regulação</p>
-          
-          </div>
-        </div>
-      </div>
-
-    </div>
     </div>
 
     <Footer />
@@ -122,12 +127,18 @@
 import Footer from '../components/footerGlobal.vue'
 import Header from '../components/headerGlobal.vue'
 import SvgIcon from '@jamescoyle/vue-icon'
-import { mdiWhatsapp } from '@mdi/js';
+import whatsappbtn from '@/components/btnGlobalWhats.vue'
 import { mdiHandcuffs } from '@mdi/js';
+import { mdiHandCoinOutline } from '@mdi/js';
+import { mdiHomeCityOutline } from '@mdi/js';
+import { mdiAccountHardHat } from '@mdi/js';
+import { mdiDomain } from '@mdi/js';
+import { mdiLaptop } from '@mdi/js';
 
 export default {
   components: {
     SvgIcon,
+    whatsappbtn,
     Header,
     Footer,
 
@@ -135,8 +146,12 @@ export default {
 
   data() {
     return {
-      path: mdiWhatsapp,
       Algema: mdiHandcuffs,
+      tributario: mdiHandCoinOutline,
+      imoveis: mdiHomeCityOutline,
+      trabalho: mdiAccountHardHat,
+      empresa: mdiDomain,
+      notbook: mdiLaptop,
     }
   }
 }
@@ -147,7 +162,7 @@ export default {
   width: 100vw;
 }
 
-.tags{
+.tags {
   display: flex;
   flex-direction: center;
   align-items: center;
@@ -158,120 +173,46 @@ export default {
   display: flex;
   flex-direction: center;
 
- 
+
+}
+.titulo-atuacao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color:#dcb675;
+}
+
+.titulo-atuacao h3{
+
+color: black;
 }
 
 .atuacao {
-  width: 200px;
+  width: 350px;
   display: flex;
   flex-direction: center;
   align-items: center;
-  margin: 30px;
+  margin: 50px;
+
+
 }
 
 .icon {
- margin-right: 25px;
+  margin-right: 25px;
+
 }
 
 .atuacao h1 {
   font-size: 16px;
-  text-align: center;
+margin-bottom:15px ;
+  color:#dcb675;
 }
 
 .atuacao p {
   font-size: 16px;
-text-align: center;
+  
 }
 
-
-
-
-.whatsapp {
-  position: fixed;
-  z-index: 10000;
-  right: 50px;
-  bottom: 25px;
-}
-
-.butao-whatsapp {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  cursor: pointer;
-  background: #23a455;
-  color: white;
-  font-weight: bold;
-  width: 250px;
-  padding: 10px;
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.svg-icon {
-  margin-right: 10px;
-
-}
-
-.butao-whatsapp-online {
-
-  font-size: 10px;
-  text-align: center;
-  position: fixed;
-  right: 60px;
-  bottom: 71px;
-  white-space: nowrap;
-  border: none;
-  cursor: pointer;
-  background: #ca2935;
-  color: white;
-  font-weight: bold;
-  width: 100px;
-  padding: 5px;
-  border-radius: 25px;
-
-}
-
-@media (max-width: 768px) {
-  .whatsapp {
-    position: fixed;
-    z-index: 10000;
-    right: 15px;
-    bottom: 15px;
-  }
-
-  .butao-whatsapp {
-
-    border: none;
-    cursor: pointer;
-    background: #23a455;
-    color: white;
-    font-weight: bold;
-    width: 200px;
-    padding: 10px;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-
-  .butao-whatsapp-online {
-
-    font-size: 10px;
-    text-align: center;
-    position: fixed;
-    right: 25px;
-    bottom: 59px;
-    white-space: nowrap;
-    border: none;
-    cursor: pointer;
-    background: #ca2935;
-    color: white;
-    font-weight: bold;
-    width: 90px;
-    padding: 5px;
-    border-radius: 25px;
-
-  }
-
-
-}</style>
+</style>

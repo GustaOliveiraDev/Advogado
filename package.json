@@ -16,6 +16,7 @@
     "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/js": "^7.2.96",
     "core-js": "^3.8.3",
+    "firebase": "^9.21.0",
     "gitart-scroll-carousel": "^1.2.4",
     "vue": "^3.2.13",
     "vue-material-design-icons": "^5.2.0",

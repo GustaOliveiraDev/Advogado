@@ -2,7 +2,7 @@
     <div class="container-home">
 
         <div class="img-logo-container">
-            <img class="imgLogo" src="../../public/direotias/Advogada-Cristina.jpg" alt="">
+            <img class="imgLogo" src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg" alt="">
         </div>
 
 
@@ -24,7 +24,7 @@
 
                 <div class="cadsHome">
                     <div class="paicadsImg">
-                        <img class="imgcads" src="../../public/direotias/direito-trabalhista.jpg" alt="">
+                        <img class="imgcads" src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg" alt="">
                     </div>
 
                     <div class="conteudo-cads">
@@ -36,7 +36,7 @@
 
                 <div class="cadsHome">
                     <div class="paicadsImg">
-                        <img class="imgcads" src="../../public/direotias/Servico-digital.jpg" alt="">
+                        <img class="imgcads" src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg" alt="">
                     </div>
                     <div class="conteudo-cads">
                         <h1>Direito Digital</h1>
@@ -47,7 +47,7 @@
 
                 <div class="cadsHome">
                     <div class="paicadsImg">
-                        <img class="imgcads" src="../../public/direotias/direito-empresarial.jpg" alt="">
+                        <img class="imgcads" src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg" alt="">
                     </div>
                     <div class="conteudo-cads">
                         <h1>Direito Empresarial</h1>

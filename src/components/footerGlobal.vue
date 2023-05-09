@@ -4,7 +4,7 @@
 
             <div class="infor">
                 <img class="imgFooter"
-                    src="../../public/direotias/Advogada-Cristina-Fasconcelos-pbuu9wvibliopqurnjfq78imc8wj3era4cu4cklbsc.jpg"
+                    src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg"
                     alt="">
             </div>
 
@@ -22,7 +22,7 @@
 
                 <div>
                     <button class="butao-footer">
-                        Fale comigo
+                        <a href="https://wa.me/65984788306" target="_blank">Fale comigo</a>
                         <svg-icon type="mdi" :path="MenuRight"></svg-icon>
                     </button>
                 </div>
@@ -31,18 +31,21 @@
             <div class="infor2">
                 <div class="titulo-footer2">
                     <h1>Fale comigo</h1>
-
                     <h2>Será um prazer lhe atender</h2>
                 </div>
 
                 <div class="contato-footer">
-                    <svg-icon type="mdi" :path="MapMarker"></svg-icon>
-                    <p>Cuiabá-Centro</p>
+                    <a href="https://goo.gl/maps/eLxPFfGQJQ7sjBJ56" target="_blank">
+                        <svg-icon type="mdi" :path="MapMarker"></svg-icon>
+                        <p>Cuiabá-Centro</p>
+                    </a>
                 </div>
 
                 <div class="contato-footer">
-                    <svg-icon type="mdi" :path="Phone"></svg-icon>
-                    <p>(33) 3333-3333</p>
+                    <a href="tel:65984788306" target="_blank">
+                        <svg-icon type="mdi" :path="Phone"></svg-icon>
+                        <p>(33) 3333-3333</p>
+                    </a>
                 </div>
 
             </div>
@@ -70,7 +73,6 @@ export default {
 </script>
 
 <style>
-
 .butao-footer {
     border: none;
     cursor: pointer;
@@ -87,10 +89,22 @@ export default {
     margin: 15px 0px 0px 0px;
 }
 
+.butao-footer a {
+    text-decoration: none;
+    color: white;
+
+}
+
 .contato-footer {
     display: flex;
     justify-content: start;
     margin-top: 15px;
+}
+
+.contato-footer a {
+    display: flex;
+    color: white;
+    text-decoration: none;
 }
 
 .infor1 h1 {

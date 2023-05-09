@@ -7,18 +7,18 @@
     </div>
 
     <carousel :items-to-show="1" :breakpoints="breakpoints" class="container-diretoria">
-      <slide v-for="slide in 2" :key="slide">
+      <slide v-for="slide in 1" :key="slide">
         <div class="diretorias">
           <div class="cads-diretoria">
             <picture class="pai-banner">
               <img class="banner-diretorias"
-                src="../../public/direotias/Advocacia-24-pbpi802cbeucwf47byjh2g2jjyygqui7n8k2dzf2lg.jpg"
+                src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg"
                 alt="cienciaImagem">
             </picture>
             <div class="nome-botao">
               <div class="nome-blog">
-                <h2>Como serão as sanções da LGPD</h2>
-                O que advogados e escritórios podem esperar do novo Provimento da OAB que deve ser analisado pelo CF
+                <h2> serão as LGPD</h2>
+                do novo Provimento da OAB que deve ser analisado pelo CF
               </div>
               <div class="butao-diretorias">
                 <button>
@@ -31,18 +31,18 @@
         </div>
       </slide>
 
-      <slide v-for="slide in 2" :key="slide">
+      <slide v-for="slide in 1" :key="slide">
         <div class="diretorias">
           <div class="cads-diretoria">
             <picture class="pai-banner">
               <img class="banner-diretorias"
-                src="../../public/direotias/direito-digital.jpg"
+                src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg"
                 alt="cienciaImagem">
             </picture>
             <div class="nome-botao">
               <div class="nome-blog">
-                <h2>Como serão as sanções da LGPD</h2>
-                O que advogados e escritórios podem esperar do novo Provimento da OAB que deve ser analisado pelo CF
+                <h2> sanções </h2>
+                 Provimento da OAB que deve ser analisado pelo CF
               </div>
               <div class="butao-diretorias">
                 <button>
@@ -55,18 +55,18 @@
         </div>
       </slide>
 
-      <slide v-for="slide in 2" :key="slide">
+      <slide v-for="slide in 1" :key="slide">
         <div class="diretorias">
           <div class="cads-diretoria">
             <picture class="pai-banner">
               <img class="banner-diretorias"
-                src="../../public/direotias/Advocacia-24-pbpi802cbeucwf47byjh2g2jjyygqui7n8k2dzf2lg.jpg"
+                src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg"
                 alt="cienciaImagem">
             </picture>
             <div class="nome-botao">
               <div class="nome-blog">
-                <h2>Como serão as sanções da LGPD</h2>
-                O que advogados e escritórios podem esperar do novo Provimento da OAB que deve ser analisado pelo CF
+                <h2>LGPD</h2>
+                 do novo Provimento da OAB que deve ser analisado pelo CF
               </div>
               <div class="butao-diretorias">
                 <button>

@@ -27,18 +27,25 @@
                         <svg-icon type="mdi" :path="Phone"></svg-icon>
                        </div>
                        <div class="text-contato">
-                        Telefone
-                        <h3> (33) 3333-3333</h3>
+                        <a href="tel:65984788306" target="_blank">
+                            Telefone
+                            <h3> (33) 3333-3333</h3>
+                        
+                        </a>
+                   
                        </div>
                     </div>
 
-                    <div class="meio-contato">
+                    <div @click="contatoWhats" target="_blank" class="meio-contato">
                         <div class="icon-contate">
                         <svg-icon type="mdi" :path="Whatsapp"></svg-icon>
                        </div>
-                       <div class="text-contato">
-                        Whatsapp
-                        <h3> (33) 3333-3333</h3>
+                       <div  class="text-contato">
+                        <a href="https://wa.me/65984788306" target="_blank">
+                            Whatsapp
+                            <h3> (33) 3333-3333</h3>
+                        
+                        </a>
                        </div>
                         
                     </div>
@@ -48,9 +55,11 @@
                         <svg-icon type="mdi" :path="Instagram"></svg-icon>
                        </div>
                        <div class="text-contato">
-                        Instagram
-
-                        <h3>@seuinstagram</h3>
+                        <a href="https://wa.me/65984788306" target="_blank">
+                            Instagran
+                            <h3> @seu_instagran</h3>
+                        
+                        </a>
                        </div>
                     </div>
 
@@ -58,13 +67,10 @@
 
 
                 <div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7685.3006039353395!2d-56.00149657269705!3d-15.610321823552109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939da531617a0115%3A0x1818f4f1a6f0b01a!2sOsmar%20Cabral%2C%20Cuiab%C3%A1%20-%20MT!5e0!3m2!1spt-BR!2sbr!4v1680731766881!5m2!1spt-BR!2sbr"
-                        class="maps" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30746.80685292295!2d-56.067925133320635!3d-15.572892097826315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db0e1e0fe00a3%3A0x5e743e84393bed23!2sCentro%20Pol%C3%ADtico%20Administrativo%2C%20Cuiab%C3%A1%20-%20MT!5e0!3m2!1spt-BR!2sbr!4v1683644593720!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div class="botaoMaps">
-                        <button>Traçar rota
+                        <button target="_blank" @click="maps">
+                            <a href="https://goo.gl/maps/eLxPFfGQJQ7sjBJ56" target="_blank" >Traçar rota</a>
                             <svg-icon type="mdi" :path="MapMarker"></svg-icon>
                         </button>
                     
@@ -95,7 +101,8 @@ export default {
         Instagram: mdiInstagram,
         Whatsapp: mdiWhatsapp,
     }
-  }
+  },
+
 }
 </script>
 
@@ -119,14 +126,15 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .maps {
     width: 750px;
     height: 300px;
+  
 }
 .text-contato{
-    
     text-align: start;
 }
 .icon-contate{
@@ -170,7 +178,7 @@ export default {
 .meio-contato {
     display: flex;
     justify-content: center;
-
+    cursor: pointer;
 
     margin-left: 15px;
     padding: 30px;
@@ -184,10 +192,21 @@ export default {
     margin-bottom: 50px;
 }
 
+.meio-contato a {
+  color: white;
+  text-decoration: none;
+ 
+}
+
 .meio-contato h3 {
     font-size: 16px;
     font-weight: bold;
  
+}
+
+.botaoMaps a {
+    color: white;
+  text-decoration: none;
 }
 
 .botaoMaps {

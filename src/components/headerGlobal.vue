@@ -3,7 +3,7 @@
   <div class="navbar-container">
 
     <img class="imgharder"
-    src="../../public/direotias/Cristina-04-pbpigupiadcv7tmkjgyc1rh4lakgxwrvs6knyrt7uo.png" alt="logo">
+    src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg" alt="logo">
     <div class="navbar">
       <input type="checkbox" name="" id="" />
 
@@ -113,12 +113,12 @@ export default {
   color: white;
 }
 
-.items a:hover {
+.items a :hover {
   color: #dcb675;
   transition: 300ms;
 }
 
-.rotas a:hover {
+.rotas.active a {
   color: #dcb675;
   transition: 300ms;
 }
