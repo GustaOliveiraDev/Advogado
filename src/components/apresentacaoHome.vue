@@ -1,72 +1,40 @@
 <template>
-    <div class="container-home">
+    <div>
+        <div class="container-home">
 
-        <div class="img-logo-container">
-            <img class="imgLogo" src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg" alt="">
-        </div>
-
-
-        <div class="apresentação">
-
-            <div class="titulo-home">
-                <h1> Cristina Vasconcelos</h1>
-                <h2>Advogada empresarial</h2>
-                <h3>
-                    Tenho por objetivo oferecer um serviço profissional e atendimento<br>
-                    personalizado, com foco no seu encantamento.Atingindo resultados e <br>
-                    ultrapassando expectativas.
-                </h3>
+            <div class="img-logo-container">
+                <img class="imgLogo"
+                    src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg"
+                    alt="">
             </div>
 
-            <hr class="hr1">
 
-            <div class="cads-container">
+            <div class="apresentação">
 
-                <div class="cadsHome">
-                    <div class="paicadsImg">
-                        <img class="imgcads" src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg" alt="">
-                    </div>
-
-                    <div class="conteudo-cads">
-                        <h1>Direito Trabalhista</h1>
-                        Serviços jurídicos para empresas nas diversas situações
-                        trabalhistas, como contratação e demissão de funcionários.
-                    </div>
+                <div class="titulo-home">
+                    <h1> Cristina Vasconcelos</h1>
+                    <h2>Advogada empresarial</h2>
+                    <h3>
+                        Tenho por objetivo oferecer um serviço profissional e atendimento
+                        personalizado, com foco no seu encantamento.Atingindo resultados e
+                        ultrapassando expectativas.
+                    </h3>
                 </div>
 
-                <div class="cadsHome">
-                    <div class="paicadsImg">
-                        <img class="imgcads" src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg" alt="">
-                    </div>
-                    <div class="conteudo-cads">
-                        <h1>Direito Digital</h1>
-                        Trata diretamente do direito digital, que hoje em dia ganha
-                        cada vez mais importância na era tecnologia
-                    </div>
-                </div>
-
-                <div class="cadsHome">
-                    <div class="paicadsImg">
-                        <img class="imgcads" src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg" alt="">
-                    </div>
-                    <div class="conteudo-cads">
-                        <h1>Direito Empresarial</h1>
-                        Serviços jurídicos para empresas nas diversas situações
-                        trabalhistas, como contratação e demissão de funcionários.
-                    </div>
-                </div>
-
-
-
+                <hr class="hr1">
+                <Cards />
             </div>
         </div>
-
+        
     </div>
 </template>
 
 <script>
+import Cards from '@/components/cadsApresentacao.vue'
 export default {
-
+    components: {
+        Cards,
+    },
 }
 </script>
 
@@ -81,7 +49,7 @@ export default {
 }
 
 .apresentação {
-    margin-left: 75px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +62,6 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin-right: 100px;
     background: #dcb675;
     height: 710px;
@@ -114,24 +81,7 @@ export default {
 
 .hr1 {
     border: 2px solid #dcb675;
-
     width: 100%;
-}
-
-.paicadsImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10px;
-
-
-}
-
-.imgcads {
-    border-radius: 15px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: 100px;
-    height: 100px;
 }
 
 
@@ -143,57 +93,21 @@ export default {
     flex-direction: column;
     margin-left: 15px;
     color: #1b2a41;
-
 }
 
 .titulo-home h1 {
     font-size: 16px;
     margin-top: 15px;
-
 }
 
 .titulo-home h2 {
     font-size: 36px;
-
     margin: 5px 0px 5px 0px;
 }
 
 .titulo-home h3 {
     font-size: 16px;
-
     margin-bottom: 50px;
-}
-
-.cads-container {
-
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-
-.conteudo-cads {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 14px;
-    padding: 15px;
-}
-
-.conteudo-cads h1 {
-    font-size: 16px;
-}
-
-
-.cadsHome {
-    height: 140px;
-    width: 560px;
-    display: flex;
-    margin-top: 30px;
-    justify-content: center;
-    border-radius: 25px;
-    background: #f9f9f9;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .banner {
@@ -204,8 +118,6 @@ export default {
 @media (max-width: 768px) {
 
     .container-home {
-        margin-bottom: 50px;
-        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -214,80 +126,44 @@ export default {
     }
 
     .titulo-home {
-        height: 130px;
-        width: 300px;
-        padding: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         flex-direction: column;
-        margin: 50px 0px 50px 0px;
+        width: 350px;
+        margin-bottom: 50px;
         color: #1b2a41;
     }
 
     .apresentação {
-        margin: 0px;
         height: 1100px;
         width: 350px;
         display: flex;
+        text-align: center;
         align-items: center;
         flex-direction: column;
+        margin-top: 30px;
+      
     }
 
     .img-logo-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0px 0px 50px 0px;
         background: #dcb675;
         height: 510px;
         width: 350px;
+        margin: 0;
+ 
+        margin-bottom: 30px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     .imgLogo {
-        margin: 0px;
         height: 500px;
         width: 350px;
-        margin-right: 0px;
     }
-
-    .paicadsImg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cadsHome {
-        flex-direction: column;
-        height: 250px;
-        width: 300px;
-        margin: 15px;
-        background: #ffffff;
-    }
-
-    .conteudo-cads {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-        text-align: center;
-        font-size: 14px;
-        padding: 5px;
-
-    }
-
-
-    .cads-container {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-
 
 }
 </style>

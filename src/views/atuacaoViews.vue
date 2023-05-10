@@ -1,8 +1,9 @@
 <template>
-  <div class="container-contate">
+  <div>
     <Header />
-
     <whatsappbtn />
+
+    <div class="container-contate">
 
     <div class="titulo-atuacao">
       <div>
@@ -18,30 +19,28 @@
 
         <div class="atuacao">
           <div>
-            <svg-icon class="icon" type="mdi" size='80' :path="empresa"></svg-icon>
+            <svg-icon class="icon" type="mdi" size='50' :path="empresa"></svg-icon>
           </div>
           <div>
             <div>
               <h1>EMPRESARIAL</h1>
             </div>
             <div>
-              <p>Normas de direito público que visam a regulação</p>
+              <p>Normas de direito público </p>
             </div>
           </div>
         </div>
         
         <div class="atuacao">
           <div>
-            <svg-icon class="icon" type="mdi" size='80' :path="tributario"></svg-icon>
+            <svg-icon class="icon" type="mdi" size='50' :path="tributario"></svg-icon>
           </div>
           <div>
             <div>
               <h1>TRIBUTÁRIO</h1>
             </div>
             <div>
-              <p>Conjunto das leis reguladoras da arrecadação
-                e fiscalização dos tributos.
-                Regulação das relações jurídicas.</p>
+              <p>Conjunto das leis reguladoras </p>
             </div>
           </div>
         </div>
@@ -52,31 +51,28 @@
       <div class="atuacaoLine">
         <div class="atuacao">
           <div>
-            <svg-icon class="icon" type="mdi" size='80' :path="imoveis"></svg-icon>
+            <svg-icon class="icon" type="mdi" size='50' :path="imoveis"></svg-icon>
           </div>
           <div>
             <div>
               <h1>IMOBILIÁRIO</h1>
             </div>
             <div>
-              <p>Regulamenta vários aspectos da vida privada.
-                 Cuida dos fenômenos jurídicos aliados
-                  ao registro de imóveis.</p>
+              <p>Regulamenta vários </p>
             </div>
           </div>
         </div>
 
         <div class="atuacao">
           <div>
-            <svg-icon class="icon" type="mdi" size='80' :path="trabalho"></svg-icon>
+            <svg-icon class="icon" type="mdi" size='50' :path="trabalho"></svg-icon>
           </div>
           <div>
             <div>
               <h1>TRABALHISTA</h1>
             </div>
             <div>
-              <p>Conjunto de normas jurídicas que
-                 regem as relações entre empregados e empregadores.</p>
+              <p>Conjunto de normas jurídicas que</p>
             </div>
           </div>
         </div>
@@ -86,23 +82,21 @@
       <div class="atuacaoLine">
         <div class="atuacao">
           <div>
-            <svg-icon class="icon" type="mdi" size='80' :path="notbook"></svg-icon>
+            <svg-icon class="icon" type="mdi" size='50' :path="notbook"></svg-icon>
           </div>
           <div>
             <div>
               <h1>DIGITAL</h1>
             </div>
             <div>
-              <p>Conjunto de princípios jurídicos e de normas
-                 jurídicas voltado à proteção jurídica
-                  da qualidade do meio ambiente.</p>
+              <p>Conjunto de princípios jurídicos e de normas</p>
             </div>
           </div>
         </div>
 
         <div class="atuacao">
           <div>
-            <svg-icon class="icon" type="mdi" size='80' :path="Algema"></svg-icon>
+            <svg-icon class="icon" type="mdi" size='50' :path="Algema"></svg-icon>
           </div>
           <div>
             <div>
@@ -118,7 +112,8 @@
       </div>
     </div>
 
-    <Footer />
+  </div>
+  <Footer />
   </div>
 </template>
 
@@ -180,7 +175,6 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   color:#dcb675;
 }
 
@@ -195,8 +189,6 @@ color: black;
   flex-direction: center;
   align-items: center;
   margin: 50px;
-
-
 }
 
 .icon {
@@ -213,6 +205,31 @@ margin-bottom:15px ;
 .atuacao p {
   font-size: 16px;
   
+}
+
+@media (max-width: 768px) {
+
+.container-contate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.atuacao {
+  width: 150px;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.icon {
+  margin-right: 5px;
+
+}
+
 }
 
 </style>
