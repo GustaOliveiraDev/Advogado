@@ -14,17 +14,17 @@
     </div>
 
 
-        <form class="contate" action="">
+        <form class="contate">
 
-            <input  class="input" type="text" placeholder="Nome:">
+            <input class="input" type="text" placeholder="Nome:" v-model="Formdata.nome">
 
-            <input class="input" type="text" placeholder="Email:">
+            <input class="input" type="text" placeholder="Email:" v-model="Formdata.email">
 
-            <input class="input" type="text" placeholder="Telefone:">
+            <input class="input" type="text" placeholder="Telefone:" v-model="Formdata.telefone">
 
-            <textarea class="input" placeholder="Descrição"></textarea>
+            <textarea class="input" placeholder="Descrição" v-model="Formdata.descricao"></textarea>
 
-            <button type="submit" class="butaoEnviar" @click.prevent="submitForm">Enviar Mensagem</button>
+            <button type="submit" class="butaoEnviar" @click.prevent="submitForm()" >Enviar Mensagem</button>
 
         </form>
 
@@ -39,31 +39,42 @@ import Footer from '../components/footerGlobal.vue'
 import Header from '../components/headerGlobal.vue'
 import Contato from '@/components/contatoViewsComponentes.vue';
 import whatsappbtn from '@/components/btnGlobalWhats.vue';
-// import firebase from "firebase/app";
+import { collection, addDoc } from "firebase/firestore"
+import db from '../firebase/index'
 
 export default {
     components: {
       whatsappbtn,
         Header,
         Footer,
-        Contato
+        Contato,
     },
-    data() {
-    return {
-      formData: {
-        name: '',
-        // email: '',
-        // telefone: '',
-        // descricao: '',
-      }
-    }
-  },
-  methods: {
-    // submitForm() {
-    //   firebase.database().ref("https://mensagens-adv-default-rtdb.firebaseio.com").push(this.data);
-    // }
-  }
 
+    data () {
+
+        return{
+           Formdata: {
+            nome:'',
+            email:'',
+            telefone:'',
+            descricao:'',
+           }
+        }
+    },
+
+  methods: {
+
+
+
+    async submitForm() {
+      
+      const colRef = collection(db, "mensagens-producao")
+
+      const docRef = await addDoc(colRef, this.Formdata)
+      console.log('Document was created with ID:', docRef.id)
+    }
+  }
+    
    
 }
 </script>
