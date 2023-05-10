@@ -21,6 +21,7 @@
 
 import Headerr from '../components/headerGlobal.vue'
 import Apresentacao from '../components/apresentacaoHome.vue'
+
 import Contato from '../components/ContatoHome.vue'
 import Blogs from '../components/BlogsHome.vue'
 import Footerr from '../components/footerGlobal.vue'
@@ -33,6 +34,7 @@ export default {
 
     Headerr,
     Apresentacao,
+ 
     Contato,
     Blogs,
     Footerr,

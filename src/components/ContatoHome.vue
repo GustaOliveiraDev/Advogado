@@ -263,6 +263,7 @@ export default {
         align-items: center;
         flex-direction: column;
         height: 300px;
+        margin-bottom: 30px;
     }
 
     .container-contato {
