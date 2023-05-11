@@ -271,4 +271,37 @@ border: none;
     flex-direction: column;
   }
 }
+
+
+@media (max-width: 500px) {
+
+.container-diretoria {
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+
+}
+
+.cads-diretoria{
+  width: 300px;
+}
+
+.banner-diretorias {
+  height: 160px;
+  width: 250px;
+}
+
+.text-blogs {
+margin-bottom: 50px;
+border: none;
+}
+
+.diretorias {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+}
 </style>

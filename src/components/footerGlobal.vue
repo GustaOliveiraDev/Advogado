@@ -234,4 +234,19 @@ export default {
     }
 
 }
+
+@media (max-width: 768px) {
+
+
+    .rodape {
+        height: 750px;
+    }
+    
+    .infor2 {
+      
+        margin-bottom: 30px;
+
+    }
+
+}
 </style>

@@ -9,12 +9,8 @@
 
                 <h1>empresarial<br></h1>
 
-
                <h3> Expert na prevenção de riscos às empresas e na proposição de mecanismos
                 para fortalecimento do negócio. Agende seu horário</h3>
-
-               
-                
 
             </div>
 
@@ -277,4 +273,54 @@ export default {
         flex-direction: column;
     }
 
-}</style>
+}
+
+@media (max-width: 500px) {
+
+.pai-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.meio-contato {
+margin-left: 15px;
+padding: 30px;
+margin: 15px;
+width: 250px;
+padding: 15px;
+border-radius: 25px;
+background: #dcb675;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+margin-bottom: 15px;
+}
+
+.maps {
+    width: 300px;
+    height: 300px;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.container-contato {
+width: 100vw;
+
+}
+
+.container-maps {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+}
+
+</style>

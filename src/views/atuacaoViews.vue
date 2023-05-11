@@ -214,15 +214,28 @@ margin-bottom:15px ;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    height: 70vh;
 }
 
 .atuacao {
   width: 150px;
+
   display: flex;
   flex-direction: center;
   align-items: center;
-  margin: 10px;
+  margin: 8px;
+
+}
+
+.atuacao h1 {
+  font-size: 10px;
+margin-bottom:5px ;
+  color:#dcb675;
+}
+
+.atuacao p {
+  font-size: 9px;
+  
 }
 
 .icon {
@@ -231,5 +244,7 @@ margin-bottom:15px ;
 }
 
 }
+
+
 
 </style>

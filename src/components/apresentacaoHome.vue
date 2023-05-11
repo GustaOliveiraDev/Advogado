@@ -166,4 +166,56 @@ export default {
     }
 
 }
+
+@media (max-width: 500px) {
+
+.container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.titulo-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 50px;
+    color: #1b2a41;
+}
+
+.apresentação {
+    height: 1100px;
+    width: 300px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+  
+}
+
+.img-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dcb675;
+    height: 510px;
+    width: 300px;
+    margin: 0;
+
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.imgLogo {
+    height: 500px;
+    width: 300px;
+}
+
+}
 </style>

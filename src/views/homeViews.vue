@@ -34,7 +34,6 @@ export default {
 
     Headerr,
     Apresentacao,
- 
     Contato,
     Blogs,
     Footerr,

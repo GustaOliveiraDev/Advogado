@@ -4,13 +4,12 @@
         <whatsappbtn />
 
         <div class="sobre">
-            <div class="titulo">
-                <div><h1>Sobre nós</h1> </div>
+            <div class="misao">
+                <div> <h1>Missões</h1></div>
                 <div>
-                  
-                    Para com eles. Contamos com excelentes profissionais
-                    preparados para a administração da justiça
-                    e assegurar a defesa dos interesses das partes em juízo.
+                    Construir relação de parceria, confiança e credibilidade
+                    com nossos clientes, atuando com ética, transparência
+                    e responsabilidade.
                 </div>
             </div>
 
@@ -44,7 +43,6 @@
 
 import Footer from '../components/footerGlobal.vue'
 import Header from '../components/headerGlobal.vue'
-
 import whatsappbtn from '@/components/btnGlobalWhats.vue'
 
 export default {
@@ -70,30 +68,19 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 60vh;
-}
-.titulo{
-    text-align: center;
-    width: 500px;
-    font-size: 16px;
-    margin-bottom: 50px;
-}
-.titulo h1{
-    text-align: center;
-    width: 500px;
-    font-size: 35px;
- 
+    height: 80vh;
 }
 
+
 .misao{
-    width: 500px;
+    width: 300px;
     text-align: center;
+    font-size: 12px;
     margin-bottom: 50px;
 }
 
 .misao h1{
     text-align: center;
-    width: 500px;
     font-size: 35px;
 }
 

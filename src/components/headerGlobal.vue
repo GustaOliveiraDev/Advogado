@@ -150,7 +150,7 @@ export default {
     margin:0;
     padding: 5px;
     width: 100px;
-    height: 80px;
+    height: 70px;
   
   
 
