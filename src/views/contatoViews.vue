@@ -78,14 +78,6 @@ export default {
 
         // },
 
-        enviarEmail() {
-            window.location.href = `mailto:?body=Olá, entrei no endereço ${window.location.origin
-                } e econtrei a norma ${TipoNormativa[this.normativaStore.normativaLerMais.tipoNormativa]
-                } nº ${this.normativaStore.normativaLerMais.numero} de ${this.normativaStore.normativaLerMais.ano
-                } - MT, gostaria de compartilha-la com você, para acessá-lá clique no link: ${window.location.href
-                }`;
-        },
-
 
     }
 
