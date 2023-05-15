@@ -5,25 +5,15 @@
             <div id="bar2" class="bar"></div>
             <div id="bar3" class="bar"></div>
         </div>
-        <nav ref="nav"  class="nav" id="nav">
-            
-            <!-- <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul> -->
-
-            <router-link class="rotas" :to="{ name: 'Home' }">Home</router-link>
-            <router-link class="rotas" :to="{ name: 'Atuacao' }">Atuação</router-link>
-            <router-link class="rotas" :to="{ name: 'Contato' }">Contato</router-link>
-            <router-link class="rotas" :to="{ name: 'SobreNós' }">Sobre nós</router-link>
+        <nav ref="nav" class="nav" id="nav">
+            <router-link class="rotasMobile" :to="{ name: 'Home' }">Home</router-link>
+            <router-link class="rotasMobile" :to="{ name: 'Atuacao' }">Atuação</router-link>
+            <router-link class="rotasMobile" :to="{ name: 'Contato' }">Contato</router-link>
+            <router-link class="rotasMobile" :to="{ name: 'SobreNós' }">Sobre nós</router-link>
         </nav>
     </div>
 
-    <div ref="menuBg"  class="menuBg" id="menuBg"></div>
-
-
+    <div ref="menuBg" class="menuBg" id="menuBg"></div>
 </template>
 
 <script>
@@ -37,18 +27,18 @@ export default {
     },
 
     methods: {
-    
+
         toggleMenu() {
             this.isMenuOpen = !this.isMenuOpen;
             console.log(this.isMenuOpen)
             if (this.isMenuOpen === true) {
-                    this.$refs.menuBar.classList.add('change');
-                    this.$refs.nav.classList.add('change');
-                    this.$refs.menuBg.classList.add('change-bg');
-            } else{
+                this.$refs.menuBar.classList.add('change');
+                this.$refs.nav.classList.add('change');
+                this.$refs.menuBg.classList.add('change-bg');
+            } else {
                 this.$refs.menuBar.classList.remove('change');
-                    this.$refs.nav.classList.remove('change');
-                    this.$refs.menuBg.classList.remove('change-bg');
+                this.$refs.nav.classList.remove('change');
+                this.$refs.menuBg.classList.remove('change-bg');
             }
         }
     }
@@ -63,8 +53,9 @@ export default {
 #menuBar {
     width: 45px;
     height: 40px;
-    margin: 30px 0 20px 20px;
+    margin: 20px;
     cursor: pointer;
+
 }
 
 .bar {
@@ -125,8 +116,25 @@ export default {
     transition: 0.3s ease;
 }
 
+.rotasMobile {
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.rotasMobile a:hover {
+    transition: 0.5s ease;
+    color: #dcb675;
+
+}
+
 .change {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
 }
 
 .change .bar {
@@ -148,6 +156,7 @@ export default {
 .change-bg {
     width: 520px;
     height: 460px;
+    overflow: hidden;
     transform: translate(-60%, -30%);
 }
 </style>

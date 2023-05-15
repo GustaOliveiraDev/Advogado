@@ -6,10 +6,10 @@
       src="../../public/direotias/douglascosta_82934045_116411013185365_8270789263511275541_n_widelg.jpg" alt="logo">
 
     <div class="menuWeb">
-      <router-link class="rotas" :to="{ name: 'Home' }">Home</router-link>
-      <router-link class="rotas" :to="{ name: 'Atuacao' }">Atuação</router-link>
-      <router-link class="rotas" :to="{ name: 'Contato' }">Contato</router-link>
-      <router-link class="rotas" :to="{ name: 'SobreNós' }">Sobre nós</router-link>
+      <router-link class="rotasWeb" :to="{ name: 'Home' }">Home</router-link>
+      <router-link class="rotasWeb" :to="{ name: 'Atuacao' }">Atuação</router-link>
+      <router-link class="rotasWeb" :to="{ name: 'Contato' }">Contato</router-link>
+      <router-link class="rotasWeb" :to="{ name: 'SobreNós' }">Sobre nós</router-link>
     </div>
 
     <div class="menuMobile">
@@ -47,7 +47,18 @@ export default {
   margin-bottom: 50px;
 }
 
+.rotasWeb {
+  margin: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
 
+.menuWeb a:hover{
+ transition: 0.5s ease;
+  color: #dcb675;
+ 
+}
 
 .menuMobile {
   display: none;
@@ -76,6 +87,16 @@ export default {
     width: 100vw;
   }
 
+  .menuWeb {
+    display: none;
+  }
+
+  .menuMobile {
+  display: flex;
+
+
+
+}
 
 
 }
